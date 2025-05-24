@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import profileImg from '../assets/1727367257314.jpg';
 import { Download, Award, Book, ArrowRight, Calendar } from 'lucide-react';
+import resumeFile from '../assets/Resume (1).pdf';
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -24,7 +25,7 @@ const About: React.FC = () => {
                 <div className="w-full h-[500px] rounded-xl overflow-hidden shadow-2xl">
                   <img 
                     src={profileImg}
-                    alt="John Doe" 
+                    alt="Abhishek Pandey" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -64,8 +65,8 @@ const About: React.FC = () => {
               
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="/resume.pdf" 
-                  className="px-6 py-3 bg-blue-600 text-white rounded-full font-medium flex items-center gap-2 hover:bg-blue-700 transition-colors duration-300"
+                  href={resumeFile}
+                  className="px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-full font-medium flex items-center gap-2 hover:bg-blue-50 dark:hover:bg-gray-800 transition-colors duration-300"
                   download
                 >
                   Download Resume <Download size={18} />
