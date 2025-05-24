@@ -29,10 +29,10 @@ const About: React.FC = () => {
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">5+ Years Experience</div>
+                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">Fresher</div>
                 </div>
                 <div className="absolute -top-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">MERN Specialist</div>
+                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">Full-Stack Developer</div>
                 </div>
               </div>
             </motion.div>
@@ -47,7 +47,7 @@ const About: React.FC = () => {
                 About Me
               </h1>
               <p className="text-gray-600 dark:text-gray-400 mb-6 text-lg">
-                I'm John Doe, a passionate Full Stack Developer with expertise in the MERN 
+                I'm Abhishek, a passionate Full Stack Developer with expertise in the MERN 
                 stack and a strong background in creating responsive, user-friendly web applications. 
                 With over 5 years of professional experience, I've worked on a wide range of projects 
                 from small business websites to large-scale enterprise applications.
@@ -239,13 +239,13 @@ const About: React.FC = () => {
                   transition={{ duration: 0.4 }}
                 >
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Bachelor of Technology in Computer Science</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Delhi Technological University</p>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">Maharana Pratap Engineering Collage Kanpur, Uttar Pradesh</p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
                     <span>2013 - 2017</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Graduated with First Class Honors. Specialized in Software Engineering and Database Management.
+                    Graduate in Sep, 2026. Specialized in Computer Science with Data Science.
                   </p>
                 </motion.div>
 
@@ -255,15 +255,6 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Master's in Software Engineering</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Indian Institute of Technology</p>
-                  <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
-                    <Calendar size={14} className="mr-1" />
-                    <span>2017 - 2019</span>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Focus on Advanced Software Architecture, Cloud Computing, and Big Data Analytics.
-                  </p>
                 </motion.div>
               </div>
             </div>
@@ -281,14 +272,14 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">AWS Certified Developer</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Amazon Web Services</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Supervised Machine Learning: Regression and Classification</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">Stanford University</p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
-                    <span>2022</span>
+                    <span>2025</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Expertise in developing and maintaining applications on the AWS platform.
+                    Completed Stanford's Supervised Machine Learning specialization, covering foundational ML algorithms, model evaluation, and practical applications.
                   </p>
                 </motion.div>
 
@@ -298,14 +289,14 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">MongoDB Certified Developer</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">MongoDB, Inc.</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Data Analytics</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">Deloitte Australia</p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
-                    <span>2021</span>
+                    <span>2025</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Demonstrated proficiency in building applications with MongoDB.
+                    Gained practical experience in data analytics, including data visualization, reporting, and business insights using real-world datasets.
                   </p>
                 </motion.div>
 
@@ -315,14 +306,14 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.2 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">React.js Developer Certification</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Meta (formerly Facebook)</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Generative AI with Large Language Models</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">AWS (Coursera)</p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
-                    <span>2020</span>
+                    <span>2025</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Advanced React.js concepts including Hooks, Context API, and Performance Optimization.
+                    Learned the fundamentals of generative AI, prompt engineering, and building applications with large language models using AWS tools.
                   </p>
                 </motion.div>
               </div>
