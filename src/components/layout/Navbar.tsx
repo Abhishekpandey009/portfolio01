@@ -44,10 +44,10 @@ const Navbar = () => {
 
         {/* Right section (Desktop Only) */}
         <div className="hidden md:flex items-center space-x-4">
-          <a href="https://github.com" target="_blank" rel="noreferrer" className={iconStyle}>
+          <a href="https://github.com" target="_blank" rel="noreferrer" className={iconStyle} aria-label="GitHub Profile">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={iconStyle}>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={iconStyle} aria-label="LinkedIn Profile">
             <Linkedin size={20} />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noreferrer" className={iconStyle}>
