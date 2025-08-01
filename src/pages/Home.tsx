@@ -7,7 +7,7 @@ import FeaturedProjects from '../components/home/FeaturedProjects';
 import SkillsSection from '../components/home/SkillsSection';
 import ExperienceTimeline from '../components/home/ExperienceTimeline';
 import profileImg from '../assets/1727367257314.jpg';
-import resumeFile from '../assets/Resume (1).pdf';
+import resumeFile from '../assets/Resume.pdf';
 
 const Home: React.FC = () => {
   useEffect(() => {

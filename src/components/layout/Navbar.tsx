@@ -1,66 +1,126 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
+import { ThemeContext } from '../../context/ThemeContext';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
   const location = useLocation();
 
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (isDarkMode) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-  }, [isDarkMode]);
+  const navLinks = [
+    { name: 'Home', to: '/' },
+    { name: 'Projects', to: '/projects' },
+    { name: 'About', to: '/about' },
+    { name: 'Contact', to: '/contact' },
+  ];
 
-  useEffect(() => {
-    // Close menu on route change
-    setIsMenuOpen(false);
-  }, [location.pathname]);
+  const iconStyle =
+    'transition duration-300 transform hover:scale-110 text-gray-700 dark:text-gray-200 hover:text-yellow-400 hover:drop-shadow-[0_0_6px_#facc15]';
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full z-50 top-0">
-      <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-gray-900 dark:text-white">
+    <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 transition duration-300">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold text-gray-900 dark:text-white">
           MyPortfolio
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Navigation Links */}
         <ul className="hidden md:flex space-x-6 text-gray-700 dark:text-gray-200">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                to={link.to}
+                className={`relative group transition duration-300 hover:text-yellow-500 ${
+                  location.pathname === link.to ? 'text-yellow-500' : ''
+                }`}
+              >
+                {link.name}
+                <span className="block h-0.5 max-w-0 group-hover:max-w-full transition-all duration-300 bg-yellow-400"></span>
+              </Link>
+            </li>
+          ))}
         </ul>
 
-        {/* Theme Toggle + Hamburger */}
-        <div className="flex items-center space-x-4">
-          <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-gray-700 dark:text-gray-200">
-            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
+        {/* Right section (Desktop Only) */}
+        <div className="hidden md:flex items-center space-x-4">
+          <a href="https://github.com" target="_blank" rel="noreferrer" className={iconStyle}>
+            <Github size={20} />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={iconStyle}>
+            <Linkedin size={20} />
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer" className={iconStyle}>
+            <Twitter size={20} />
+          </a>
           <button
-            className="md:hidden text-gray-700 dark:text-gray-200 focus:outline-none"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={toggleTheme}
+            className="text-gray-700 dark:text-gray-200 hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+            aria-label="Toggle Dark Mode"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
-      </nav>
 
-      {/* Mobile Menu */}
+        {/* Mobile Hamburger Icon */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden text-gray-700 dark:text-gray-200"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 px-4 pb-4 shadow-md">
+        <div className="md:hidden px-4 pb-4">
           <ul className="flex flex-col space-y-3 text-gray-700 dark:text-gray-200">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  to={link.to}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block py-2 hover:text-yellow-500 transition ${
+                    location.pathname === link.to ? 'text-yellow-500' : ''
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
+          <div className="flex items-center space-x-4 mt-4 text-gray-700 dark:text-gray-200">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+            >
+              <Github size={20} />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+            >
+              <Linkedin size={20} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+            >
+              <Twitter size={20} />
+            </a>
+            <button
+              onClick={toggleTheme}
+              className="hover:text-yellow-400 dark:hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+            >
+              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+          </div>
         </div>
       )}
     </header>

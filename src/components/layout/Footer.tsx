@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="inkedin.com/in/abhishek-pandey-3b3542217/" 
+                href="https://www.linkedin.com/in/abhishek-pandey-ds/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
@@ -88,12 +88,12 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="mailto:rajandraprasdpandey@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                  rajandraprasdpandey@gmail.com
+                  abhishekPandey.com
                 </a>
               </li>
               <li>
-                <a href="tel:+919807394043" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
-                  +91 9807394043
+                <a href="tel:+919026488479" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">
+                  +91 9026488479
                 </a>
               </li>
             </ul>

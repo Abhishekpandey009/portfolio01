@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import profileImg from '../assets/1727367257314.jpg';
 import { Download, Award, Book, ArrowRight, Calendar } from 'lucide-react';
-import resumeFile from '../assets/Resume (1).pdf';
+import resumeFile from '../assets/Resume.pdf';
 
 const About: React.FC = () => {
   useEffect(() => {
@@ -30,10 +30,10 @@ const About: React.FC = () => {
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">Fresher</div>
+                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">Aspiring Full Stack Developer</div>
                 </div>
                 <div className="absolute -top-6 -left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">Full-Stack Developer</div>
+                  <div className="text-blue-600 dark:text-blue-400 font-bold text-lg">BTech CSE & Data Science Student</div>
                 </div>
               </div>
             </motion.div>
@@ -48,19 +48,13 @@ const About: React.FC = () => {
                 About Me
               </h1>
               <p className="text-gray-600 dark:text-gray-400 mb-6 text-lg">
-                I'm Abhishek, a passionate Full Stack Developer with expertise in the MERN 
-                stack and a strong background in creating responsive, user-friendly web applications. 
-                With over 5 years of professional experience, I've worked on a wide range of projects 
-                from small business websites to large-scale enterprise applications.
+                I'm Abhishek Pandey, a passionate BTech Computer Science & Data Science student (2026) with hands-on experience in full stack web development using the MERN stack. I enjoy building responsive, user-centric applications and solving real-world problems through technology.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-6 text-lg">
-                My approach to development combines technical expertise with a keen eye for design 
-                and user experience. I believe that great software should not only function flawlessly 
-                but also provide an intuitive and enjoyable experience for the end user.
+                My development approach blends clean, scalable code with a strong focus on design and user experience. I’m also actively improving my skills in Data Structures, Algorithms, and exploring AI/ML to stay aligned with industry trends.
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing my knowledge through blog posts and community forums.
+                Outside of academics and coding, I love learning about new technologies, participating in tech communities, and working on personal projects that challenge and grow my skills.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -240,13 +234,13 @@ const About: React.FC = () => {
                   transition={{ duration: 0.4 }}
                 >
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Bachelor of Technology in Computer Science</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Maharana Pratap Engineering Collage Kanpur, Uttar Pradesh</p>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">Maharana Pratap Engineering College Kanpur</p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
-                    <span>2013 - 2017</span>
+                    <span>2022 - 2026</span>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Graduate in Sep, 2026. Specialized in Computer Science with Data Science.
+                    Specialized in Data Science. Focused on Machine Learning, AI, and Full Stack Development.
                   </p>
                 </motion.div>
 
@@ -256,6 +250,15 @@ const About: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
                 >
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">High School & Intermediate</h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">UP Board, Kanpur</p>
+                  <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
+                    <Calendar size={14} className="mr-1" />
+                    <span>2018 - 2022</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Completed higher secondary education with a focus on science and mathematics.
+                  </p>
                 </motion.div>
               </div>
             </div>
@@ -266,55 +269,104 @@ const About: React.FC = () => {
                 Certifications
               </h3>
               
-              <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Supervised Machine Learning - Stanford */}
                 <motion.div 
                   className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Supervised Machine Learning: Regression and Classification</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Stanford University</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Supervised Machine Learning
+                  </h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Stanford University (Coursera)
+                  </p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
                     <span>2025</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">
                     Completed Stanford's Supervised Machine Learning specialization, covering foundational ML algorithms, model evaluation, and practical applications.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Machine Learning · Supervised Learning · Python · Model Evaluation
                   </p>
                 </motion.div>
 
+                {/* Generative AI with LLMs - AWS */}
                 <motion.div 
                   className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Data Analytics</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">Deloitte Australia</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Generative AI with Large Language Models
+                  </h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    AWS (Coursera)
+                  </p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
                     <span>2025</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Gained practical experience in data analytics, including data visualization, reporting, and business insights using real-world datasets.
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">
+                    Learned the fundamentals of generative AI, prompt engineering, and building applications with large language models using AWS tools.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Generative AI · LLMs · Prompt Engineering · AWS
                   </p>
                 </motion.div>
 
+                {/* AWS Solution Architecture Simulation */}
                 <motion.div 
                   className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.2 }}
                 >
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">Generative AI with Large Language Models</h4>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2">AWS (Coursera)</p>
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    AWS APAC Solution Architecture Job Simulation
+                  </h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    AWS
+                  </p>
                   <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
                     <Calendar size={14} className="mr-1" />
                     <span>2025</span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Learned the fundamentals of generative AI, prompt engineering, and building applications with large language models using AWS tools.
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">
+                    Completed a hands-on job simulation focused on AWS solution architecture, cloud design, and deployment best practices.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    AWS · Cloud Architecture · Solution Design
+                  </p>
+                </motion.div>
+
+                {/* Deloitte Data Analytics */}
+                <motion.div 
+                  className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.3 }}
+                >
+                  <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Data Analytics
+                  </h4>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Deloitte Australia
+                  </p>
+                  <div className="flex items-center text-gray-500 dark:text-gray-400 mb-4 text-sm">
+                    <Calendar size={14} className="mr-1" />
+                    <span>2025</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mb-2">
+                    Gained practical experience in data analytics, including data visualization, reporting, and business insights using real-world datasets.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    Data Analytics · Data Visualization · Business Insights
                   </p>
                 </motion.div>
               </div>
