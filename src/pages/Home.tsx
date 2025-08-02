@@ -72,15 +72,21 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+              <div className="relative w-fit h-fit">
+              {/* Glowing animated background behind image */}
+                <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-700 via-violet-500 to-sky-400 rounded-full blur-3xl opacity-60 animate-pulse-glow z-0" />
+    
+                {/* 🖼 Profile image */}
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl z-10 relative">
                   <img 
                     src={profileImg} 
                     alt="Abhishek Pandey" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md">
+    
+                {/* 🏷 Fresher Label */}
+                <div className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md z-20">
                   <div className="text-blue-600 dark:text-blue-400 font-bold">Fresher</div>
                 </div>
               </div>
