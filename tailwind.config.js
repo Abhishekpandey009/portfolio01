@@ -1,14 +1,19 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  darkMode: 'class', // Enables dark mode support
-  // Specify the paths to all of the template files in your project
-  // Tailwind will scan these files for class names to generate the necessary styles 
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Ensures Tailwind scans all relevant files
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        pulseGlow: {
+          '0%': { transform: 'scale(1) rotate(0deg)', opacity: '0.8' },
+          '50%': { transform: 'scale(1.15) rotate(10deg)', opacity: '0.3' },
+          '100%': { transform: 'scale(1) rotate(0deg)', opacity: '0.8' },
+        },
+      },
+      animation: {
+        'pulse-glow': 'pulseGlow 3.5s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
 };
