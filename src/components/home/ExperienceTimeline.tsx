@@ -79,13 +79,13 @@ const ExperienceTimeline: React.FC = () => {
 						>
 							{/* Timeline Dot */}
 							<div
-								className={`absolute top-0 ${
-									index % 2 === 0
-										? 'left-0 md:-left-4'
-										: 'left-0 md:-left-4'
-								} w-8 h-8 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center shadow-md`}
+							    className={`absolute top-0 w-8 h-8 bg-blue-600 dark:bg-blue-500 rounded-full flex items-center justify-center shadow-md ${
+							        index % 2 === 0
+							            ? 'left-0 md:-left-4' // For even indices, keep it on the left
+							            : 'right-0 md:-right-4' // For odd indices, move it to the right
+							    }`}
 							>
-								<Award size={16} className="text-white" />
+							    <Award size={16} className="text-white" />
 							</div>
 
 							{/* Content Card */}
