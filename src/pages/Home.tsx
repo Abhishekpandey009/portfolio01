@@ -76,12 +76,12 @@ const Home: React.FC = () => {
               {/* Glowing animated background behind image */}
                 <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-700 via-violet-500 to-sky-400 rounded-full blur-3xl opacity-60 animate-pulse-glow z-0" />
     
-                {/* 🖼 Profile image */}
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl z-10 relative">
-                  <img 
-                    src={profileImg} 
-                    alt="Abhishek Pandey" 
-                    className="w-full h-full object-cover"
+                  {/* 🖼 Profile image */}
+                <div className="relative w-[380px] h-[380px] p-[4px] bg-gradient-to-tr from-cyan-400 to-violet-600 rounded-full mx-auto">
+                  <img
+                    src={profileImg}
+                    alt="Profile"
+                    className="w-full h-full object-cover rounded-full border-4 border-black shadow-xl"
                   />
                 </div>
     
