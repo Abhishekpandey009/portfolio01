@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                 className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
                 aria-label="Twitter"
               >
-                <Twitter size={20} />
+                <X size={20} />
               </a>
               <a 
                 href="mailto:rajandraprasdpandey@gmail.com" 
