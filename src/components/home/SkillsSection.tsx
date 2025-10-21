@@ -2,29 +2,23 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const skills = [
-  // Languages
+  // Programming Languages
   { name: 'Python', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
   { name: 'JavaScript', level: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-  { name: 'TypeScript', level: 75, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
   { name: 'C++', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
 
-  // Web Development (MERN)
+  // Web Development (MERN Stack)
   { name: 'React', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'Node.js', level: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-  { name: 'Express.js', level: 75, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
   { name: 'MongoDB', level: 75, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
-
-  // Machine Learning
-  { name: 'scikit-learn', level: 65, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' }, // used Python fallback
-  { name: 'TensorFlow', level: 60, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg' },
-  { name: 'OpenCV', level: 60, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg' },
-
-  // Tools
-  { name: 'Git', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-  { name: 'Docker', level: 60, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-  { name: 'JWT', level: 70, icon: 'https://img.icons8.com/color/48/000000/jwt.png' }, // JWT not in Devicon
   { name: 'REST APIs', level: 80, icon: 'https://img.icons8.com/external-flat-juicy-fish/60/000000/external-api-coding-and-development-flat-flat-juicy-fish.png' },
+
+  // Tools & DevOps
+  { name: 'Git & GitHub', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+  { name: 'Docker', level: 60, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+  { name: 'JWT Authentication', level: 70, icon: 'https://img.icons8.com/color/48/000000/jwt.png' }
 ];
+
 
 const SkillsSection: React.FC = () => {
   return (
