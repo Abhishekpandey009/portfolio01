@@ -7,4 +7,11 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    outDir: 'dist', // default, can keep
+  },
+  server: {
+    // This ensures React routes like /projects or /about don't show 404 in dev
+    historyApiFallback: true,
+  },
 });
