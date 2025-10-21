@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import jwt from '../../assets/OIP (1).jpeg';
 
 const skills = [
   // Programming Languages & Problem Solving
@@ -16,7 +17,7 @@ const skills = [
 
   // Tools & DevOps
   { name: 'Git & GitHub', level: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-  { name: 'JWT Authentication', level: 70, icon: 'https://img.icons8.com/color/48/000000/jwt.png' }
+  { name: 'JWT Authentication', level: 70, icon: jwt }
 ];
 
 
