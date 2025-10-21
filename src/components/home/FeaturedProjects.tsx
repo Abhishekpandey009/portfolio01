@@ -5,7 +5,7 @@ import { ArrowRight, Github, ExternalLink } from 'lucide-react';
 
 import project1Img from '../../assets/3851200.jpg';
 import project2Img from '../../assets/Screenshot 2025-05-25 023853.png';
-import project4Img from '../assets/CRM-1-scaled.webp';
+import project4Img from '../../assets/CRM-1-scaled.webp';
 
 const projectData = [
 	{
