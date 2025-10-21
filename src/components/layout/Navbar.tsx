@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, XIcon, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Sun, Moon, Github, Linkedin } from 'lucide-react';
 import { ThemeContext } from '../../context/ThemeContext';
 import xLogo from '../../assets/hd-twitter-x-new-logo-png-735811696672788haniphkh2j.png';
 
@@ -43,37 +43,30 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Right section (Desktop Only) */}
+        {/* Desktop Right Section */}
         <div className="hidden md:flex items-center space-x-4">
-          <a href="https://github.com/Abhishekpandey009" target="_blank" rel="noreferrer" className={iconStyle} aria-label="GitHub Profile">
+          <a href="https://github.com/Abhishekpandey009" target="_blank" rel="noreferrer" className={iconStyle}>
             <Github size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/abhishek-pandey-ds/" target="_blank" rel="noreferrer" className={iconStyle} aria-label="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/abhishek-pandey-ds/" target="_blank" rel="noreferrer" className={iconStyle}>
             <Linkedin size={20} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className={iconStyle}>
-            <XIcon size={20} />
+          <a href="https://x.com/Abhishe89913671" target="_blank" rel="noreferrer" className={iconStyle}>
+            <img src={xLogo} alt="X Logo" className="w-5 h-5" />
           </a>
 
-          <button
-            onClick={toggleTheme}
-            className="text-gray-700 dark:text-gray-200 hover:text-yellow-400 transition duration-300 transform hover:scale-110"
-            aria-label="Toggle Dark Mode"
-          >
+          <button onClick={toggleTheme} className={iconStyle} aria-label="Toggle Dark Mode">
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
         </div>
 
-        {/* Mobile Hamburger Icon */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-gray-700 dark:text-gray-200"
-        >
+        {/* Mobile Hamburger */}
+        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-gray-700 dark:text-gray-200">
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown */}
       {isMenuOpen && (
         <div className="md:hidden px-4 pb-4">
           <ul className="flex flex-col space-y-3 text-gray-700 dark:text-gray-200">
@@ -91,34 +84,18 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
           <div className="flex items-center space-x-4 mt-4 text-gray-700 dark:text-gray-200">
-            <a
-              href="https://github.com/Abhishekpandey009"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
-            >
+            <a href="https://github.com/Abhishekpandey009" target="_blank" rel="noreferrer" className={iconStyle}>
               <Github size={20} />
             </a>
-            <a
-              href="https://www.linkedin.com/in/abhishek-pandey-ds/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
-            >
+            <a href="https://www.linkedin.com/in/abhishek-pandey-ds/" target="_blank" rel="noreferrer" className={iconStyle}>
               <Linkedin size={20} />
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
-            >
-              <Twitter size={20} />
             </a>
-            <button
-              onClick={toggleTheme}
-              className="hover:text-yellow-400 dark:hover:text-yellow-400 transition duration-300 transform hover:scale-110"
-            >
+            <a href="https://x.com/Abhishe89913671" target="_blank" rel="noreferrer" className={iconStyle}>
+              <img src={xLogo} alt="X Logo" className="w-5 h-5" />
+            </a>
+            <button onClick={toggleTheme} className={iconStyle}>
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
           </div>
