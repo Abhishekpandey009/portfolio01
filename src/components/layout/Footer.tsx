@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, XIcon, Mail } from 'lucide-react';
-import xLogo from '../assets/hd-twitter-x-new-logo-png-735811696672788haniphkh2j.png';
+import xLogo from '../../assets/hd-twitter-x-new-logo-png-735811696672788haniphkh2j.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -43,11 +43,7 @@ const Footer: React.FC = () => {
                 className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
                 aria-label="X (Twitter)"
               >
-                <img
-                  src={xLogo}
-                  alt="X Logo"
-                  className="w-5 h-5"
-                />
+                <img src={xLogo} alt="X Logo" className="w-5 h-5" />
               </a>
 
               <a 
