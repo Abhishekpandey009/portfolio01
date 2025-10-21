@@ -107,14 +107,18 @@ const Navbar = () => {
               className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
             >
               <Linkedin size={20} />
-            </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
+              className={iconStyle}
+              aria-label="X (Twitter) Profile"
             >
-              <Twitter size={20} />
+              <img
+                src={xLogo}
+                alt="X Logo"
+                className="w-5 h-5 invert dark:invert-0"
+              />
             </a>
             <button
               onClick={toggleTheme}
