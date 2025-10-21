@@ -51,8 +51,13 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/abhishek-pandey-ds/" target="_blank" rel="noreferrer" className={iconStyle} aria-label="LinkedIn Profile">
             <Linkedin size={20} />
           </a>
-          <a href="https://x.com/Abhishe89913671?t=EfWG0EwZdPcg6w5WH-9d9w&s=09" target="_blank" rel="noreferrer" className={iconStyle}>
-            <xLogo size={20} />
+          <a
+            href="https://x.com/Abhishe89913671?t=EfWG0EwZdPcg6w5WH-9d9w&s=09"
+            target="_blank"
+            rel="noreferrer"
+            className={iconStyle}
+          >
+            <img src={xLogo} alt="X Logo" className="w-5 h-5" />
           </a>
 
           <button
