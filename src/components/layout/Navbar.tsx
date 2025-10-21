@@ -51,8 +51,8 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/abhishek-pandey-ds/" target="_blank" rel="noreferrer" className={iconStyle} aria-label="LinkedIn Profile">
             <Linkedin size={20} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" className={iconStyle}>
-            <XIcon size={20} />
+          <a href="https://x.com/Abhishe89913671?t=EfWG0EwZdPcg6w5WH-9d9w&s=09" target="_blank" rel="noreferrer" className={iconStyle}>
+            <xLogo size={20} />
           </a>
 
           <button
