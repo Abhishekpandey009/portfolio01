@@ -93,7 +93,7 @@ const Navbar = () => {
           </ul>
           <div className="flex items-center space-x-4 mt-4 text-gray-700 dark:text-gray-200">
             <a
-              href="https://github.com"
+              href="https://github.com/Abhishekpandey009"
               target="_blank"
               rel="noreferrer"
               className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
@@ -101,7 +101,7 @@ const Navbar = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/abhishek-pandey-ds/"
               target="_blank"
               rel="noreferrer"
               className="hover:text-yellow-400 transition duration-300 transform hover:scale-110"
@@ -109,7 +109,7 @@ const Navbar = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/Abhishe89913671?t=EfWG0EwZdPcg6w5WH-9d9w&s=09"
               target="_blank"
               rel="noreferrer"
               className={iconStyle}
