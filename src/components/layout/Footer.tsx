@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, XIcon, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -40,10 +40,15 @@ const Footer: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                aria-label="Twitter"
+                aria-label="X (Twitter)"
               >
-                <X size={20} />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_X_logo.svg"
+                  alt="X Logo"
+                  className="w-5 h-5"
+                />
               </a>
+
               <a 
                 href="mailto:rajandraprasdpandey@gmail.com" 
                 className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
