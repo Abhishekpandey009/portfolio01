@@ -5,7 +5,7 @@ import { ArrowRight, Github, ExternalLink } from 'lucide-react';
 
 import project1Img from '../../assets/3851200.jpg';
 import project2Img from '../../assets/Screenshot 2025-05-25 023853.png';
-import project3Img from '../../assets/Screenshot 2025-05-25 023605.png';
+import project4Img from '../assets/CRM-1-scaled.webp';
 
 const projectData = [
 	{
@@ -39,13 +39,14 @@ const projectData = [
 	},
 	{
 		id: 3,
-		title: 'Weather.ai – Smarter Forecasts with the Power of AI',
+		title: 'CRM – Campaign Management Platform',
 		description:
-			'Weather.ai is your personal weather intelligence platform, offering hyper-accurate, deeply personalized weather updates powered by AI.',
-		image: project3Img,
-		technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'AI/ML'],
-		github: 'https://github.com',
-		live: 'https://jovial-conkies-90ba97.netlify.app/',
+			'CRM is a comprehensive campaign management platform designed to streamline your marketing efforts. With powerful analytics, user-friendly interfaces, and seamless integration with your favorite tools, CRM empowers you to take your campaigns to the next level.',
+		image: project4Img,
+	    technologies: ["React.js", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS", "Express.js", "TypeScript", "React + Vite + TypeScript", "Express + TypeScript", "Firebase Firestore", "TailwindCSS", "Node.js", "Lucide Icons", "REST APIs"],
+	    category: "Full Stack",
+	    github: "https://github.com/Abhishekpandey009/xeno_crm",
+	    live: "https://xeno-crm-abhishek-pandeys-projects-2208186e.vercel.app/",
 	},
 ];
 
