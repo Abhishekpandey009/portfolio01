@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, XIcon, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
 import { ThemeContext } from '../../context/ThemeContext';
+import xLogo from '../../assets/hd-twitter-x-new-logo-png-735811696672788haniphkh2j.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
