@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, XIcon, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const Navbar = () => {
@@ -51,8 +51,9 @@ const Navbar = () => {
             <Linkedin size={20} />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noreferrer" className={iconStyle}>
-            <X size={20} />
+            <XIcon size={20} />
           </a>
+
           <button
             onClick={toggleTheme}
             className="text-gray-700 dark:text-gray-200 hover:text-yellow-400 transition duration-300 transform hover:scale-110"
